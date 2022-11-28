@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" herf = ex1.css>
+    <script  scr="ex1.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <h1>BANG DIEM CUA EM</h1>
+        <div id="input">
+            <span>Semester1:</span>
+            <input type="text" name="input" id="text_1" size="40px"> 
+        </div>
+        <div id="input">
+            <span>Semester2:</span>
+            <input type="text" name="input" id="text_2" size="40px">
+        </div>
+    </div>
+    <div>
+        <div id="input">
+            <div id="from-horizontal">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <span> Year: </span>
+                    </div>
+                    <div class="col-sm-2">
+                        <select style="width: 50px ; color: red" id="select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="4">3</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-8">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="input">
+            <div id="from-horizontal">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <span> Summarise: </span>
+                    </div>
+                    <div class="col-sm-10">
+                        <input type="text" name="result" id="result" size="40" disabled="true">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="input">
+            <div id="from-horizontal">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <p id="display"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="from-horizontal">
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-2">
+                    <input type="button" name="ok" id="ok" value="OK" onclick="myFunction1()">
+                </div>
+                <div class="col-sm-2">
+                    <input type="button" name="cancel" id="cancel" value="Cancel" onclick="myFunction1()">
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

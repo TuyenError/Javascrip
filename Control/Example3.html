@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Click the button to play a time-based greeting: </p>
+    <input type="number" name=" " id="nhap">
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+
+    <script>
+        // function myFunction(){
+        //     var number = document.getElementById("nhap").value;
+        //     var greeting;
+        //     if (number==0){
+        //         greeting = "Ban nha duoc 0 diem";
+        //     }else if (number>0){
+        //         greeting = "do la so duong";
+        //     }else{
+        //         greeting = "day la so am ";
+        //     }
+        //     document.getElementById("demo").innerHTML = greeting;
+        // }
+        function myFunction() {
+            var number = document.getElementById("nhap").value;
+            var greeting;
+            if (number == 0) {
+                document.getElementById("demo").innerHTML = "ban duoc 0 diem";
+                document.getElementById("demo").style.color = "yellow";
+            } else if (number > 0) {
+                document.getElementById("demo").innerHTML = "Do la so duong";
+                document.getElementById("demo").style.background = "blue";
+            } else {
+                document.getElementById("demo").innerHTML = "Day la so am";
+            }
+        }
+    </script>
+</body>
+
+</html>

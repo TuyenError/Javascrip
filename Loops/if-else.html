@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .square1 {
+        width: 20px;
+        float: left;
+        height: 20px;
+        margin: 10px;
+        background-color: brown;
+        padding: 15px;
+        border: 1px solid gray;
+    }
+        .square2 {
+        width: 20px;
+        float: left;
+        height: 20px;
+        margin: 10px;
+        background-color: black;
+        padding: 15px;
+        border: 1px solid gray;
+    }
+</style>
+<body>
+    <script>
+         for (var i = 0; i <= 5; i++) {
+                for (var j = 0; j <= 10; j++) {
+                    if (i%2 ==0){
+                        document.write("<div class='square1'> </div>");
+                    }else{
+                        document.write("<div class='square2'> </div>");
+                    }
+                    
+                }
+                document.write("<div style='clear:both'></div>");
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+   Nhap ten: <input id="a" type="text"><br><br>
+    Nhap tuoi: <input id="b" type="text"><br><br>
+    Nhap que: <input id="c" type="text"><br><br>
+    <button onclick="Add()">Add</button>
+    <div id="show"></div>
+
+</body>
+<script>
+     var stt = 1;
+     var line = " "
+    function Add(){
+        var name = document.getElementById("a").value;
+        var tuoi = document.getElementById("b").value;
+        var que = document.getElementById("c").value;
+        var tabl = '<table boder="1"><tr><th> stt </th><th>Ten</th><th>Tuoi</th><th>Que</th></tr>'
+        var line = " "
+        var end = '</table>'
+        line = '<tr><td>' + stt + '</td>'+'<td>' + name + '</td>' +'<td>' + tuoi + '</td>'+'<td>' + que + '</td>'+'</tr>'
+        document.getElementById("show").innerHTML=tabl+line+end
+        stt++
+    }
+    
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align:center">
+    Name:
+    <input type ="text" id="name">
+    </br>
+    </br>
+    Ten cua cac ong do la:
+    <input type="text" id ="hienthi">
+    </br>
+    </br>
+    <input type="button" value="OK" onclick="getName()">
+    <script type="text/javascript">
+        var array = [];
+        function getName() {
+            var a = document.getElementById("name").value;
+            array.push(a);
+            document.getElementById("hienthi").value=array;
+        }
+
+    </script>
+</body>
+</html>

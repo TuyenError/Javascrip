@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+</head>
+<body>
+    <h1>User Login</h1>
+    <div>
+        <label>User Login
+            <br/>
+            <input type="text" size="32" id="txt1"/>
+        </label>
+    </div>
+    <div>
+        <label>
+            Password <br/>
+            <input type="password" size="32" id="txt2"/>
+        </label>
+    </div>
+    <br>
+        <button type="button" onclick="login()" >Login</button>
+        <button type="button" onclick="cancel()"> Clear</button>
+    <div id="sms"></div>
+    <script>
+        var usernames=["admin","author","guest"];
+        var passwords=["321","abc","xyz"];
+        function login(){
+            var username=document.getElementById("txt1").value;
+            var password=document.getElementById("txt2").value;
+            var sms="";
+            for (var i=0; i<usernames.length;i++){
+                if (username==usernames[i]){
+                    if (password==passwords[i]){
+                        alert('Bạn có chắc qua trang web khác không')
+                        location.href="http://www.google.com";
+                    }else{
+                        sms="Invalid password!";
+                    }
+                    break;
+                    }
+                else{
+                    sms ="Invalid username!";
+                }
+            }
+            document.getElementById("sms").innerHTML = sms;
+            
+            function cancel(){
+                document.getElementById("tx1").value="";
+                document.getElementById("tx2").value="";
+                document.getElementById("tx1").focus();
+            }    }
+    </script>
+</body>
+</html>

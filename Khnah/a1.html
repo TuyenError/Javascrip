@@ -1,34 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-</head>
-<body>
-   Nhap ten: <input id="a" type="text"><br><br>
-    Nhap tuoi: <input id="b" type="text"><br><br>
-    Nhap que: <input id="c" type="text"><br><br>
-    <button onclick="Add()">Add</button>
-    <div id="show"></div>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     
+    <div class="container">
+        <div class="row" id="taiday">
+            <div class="col-12">
 
-</body>
-<script>
-     var stt = 1;
-     var line = " "
-    function Add(){
-        var name = document.getElementById("a").value;
-        var tuoi = document.getElementById("b").value;
-        var que = document.getElementById("c").value;
-        var tabl = '<table boder="1"><tr><th> stt </th><th>Ten</th><th>Tuoi</th><th>Que</th></tr>'
-        var line = " "
-        var end = '</table>'
-        line = '<tr><td>' + stt + '</td>'+'<td>' + name + '</td>' +'<td>' + tuoi + '</td>'+'<td>' + que + '</td>'+'</tr>'
-        document.getElementById("show").innerHTML=tabl+line+end
-        stt++
-    }
+            </div>
+        </div>
+    </div>
+
+    <div class="container_title">
+
+    </div>
+  </body>
+  <script>
+    var array=[
+        {
+            A:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRXI0gh51DSoPcJwx2EM8HSsdQM_gZ3AXGFw&usqp=CAU"  
+        },
+        {
+            A:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRXI0gh51DSoPcJwx2EM8HSsdQM_gZ3AXGFw&usqp=CAU"  
+
+        }
+    ]
+      
+    div=''
+    for(var i=0;i<array.length;i++){
     
-</script>
+        div+=`
+        <div class="col-3">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="${array[i].A}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a> <a href="#" class="btn btn-primary" onclick="luc()" >Detail</a>
+            </div>
+            </div>
+        </div>
+        </div>
+        
+        `
+            document.getElementById("taiday").innerHTML=div
+
+        }
+
+        function luc(){
+            
+            var A=document.querySelector(".container_title")
+            document.querySelector(".container_title").innerHTML="Phan Than Luc"
+
+        }
+  </script>
 </html>

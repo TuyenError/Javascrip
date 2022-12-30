@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="BAITAP.js"></script>
+</head>
+<body>
+    <head id="header">
+        <marquee class="text" scrollspy="4">
+            Hello idol of our team! We are really Love you so much. Thank a lot when we have problem, 
+            you alway beside us and help us over 
+        </marquee>
+
+    </head>
+    <content>
+        <div class="intro">
+            <from>
+                <label>Fullname_Customer</label>
+                <input class="from-control" type="text" name="Fullname_cus" id="fn_c" onkeypress="return isCharacterKey(event)" required>
+                <label>ID_Pro</label>
+                <input class="from-control" type="text" name="ID_Pro" id="id" onkeypress="return isCharacterKey(event)"required>
+                <label>Name_Pro</label>
+                <input class="from-control" type="text" name="Name_Pro" id="n_p" required>
+                <label>Quantity_Pro</label>
+                <input class="from-control" type="text" name="Quantity_Pro" id="q_p" onkeypress="return isCharacterKey(event)" required>
+                <label>Price_Pro</label>
+                <input class="from-control" type="text" name="Price_Pro" id="price" onkeypress="return isCharacterKey(event)" required>
+                <input class="btn1" type="button" onclick="savedata()" name="ok" value="Save" id="bt">
+                <input class="btn2" type="button" onclick="showdata()" name="show" value="Show" id="show">
+                <input class="btn2" type="reset" name="reset" value="Reset" id="reset">
+            </from> <br/><br />
+            <table>
+                <tr>
+                    <th>Auto_Increment</th>
+                    <th>Fullname_Customer</th>
+                    <th>ID_Pro</th>
+                    <th>Name_Pro</th>
+                    <th>Quantity_Pro</th>
+                    <th>Price_Pro</th>
+                    <th>Discount</th>
+                    <th>Amount</th>
+                    <th>Total</th>
+                </tr>
+            </table>
+        </div>
+    </content>
+    
+</body>
+</html>
